@@ -1,0 +1,8 @@
+<h2>New book</h2>
+<form action="/books" method="POST" enctype="multipart/form-data"> 
+    <!-- enctype 这里，是为了使用文件。会发送多个部分的数据 -->
+    <%- include('_form_fields') %>
+    <a href="/books">Cancel</a>
+    <button type="submit">Create</button>
+
+</form>
